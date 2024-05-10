@@ -7,12 +7,12 @@ CREATE TABLE IF NOT EXISTS Cities (
     "Cities" TEXT,
     "City name" TEXT,
     "Views" INTEGER,
-    PRIMARY KEY ("Date")
+    PRIMARY KEY ("Cities")
 );
 
 /*Content type*/
 
-CREATE TABLE IF NOT EXISTS Content type (
+CREATE TABLE IF NOT EXISTS Content_type (
     "Date" TIMESTAMP,
     "Content type" TEXT,
     "Views" INTEGER,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS Content type (
 
 /*Device type*/
 
-CREATE TABLE IF NOT EXISTS Device type (
+CREATE TABLE IF NOT EXISTS Device_type (
     "Date" TIMESTAMP,
     "Device type" TEXT,
     "Views" INTEGER,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS Geography (
 
 /*New and returning viewers*/
 
-CREATE TABLE IF NOT EXISTS New and returning viewers (
+CREATE TABLE IF NOT EXISTS New_and_returning_viewers (
     "Date" TIMESTAMP,
     "New and returning viewers" TEXT,
     "Views" INTEGER,
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS New and returning viewers (
 
 /*Oprating system*/
 
-CREATE TABLE IF NOT EXISTS Operating system (
+CREATE TABLE IF NOT EXISTS Operating_system (
     "Date" TIMESTAMP,
     "Operating system" TEXT,
     "Views" INTEGER,
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS Operating system (
 
 /*Sharing service*/
 
-CREATE TABLE IF NOT EXISTS Sharing service (
+CREATE TABLE IF NOT EXISTS Sharing_service (
     "Date" TIMESTAMP,
     "Sharing service" TEXT,
     "Views" INTEGER,
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS Sharing service (
 
 /*Subscription source*/
 
-CREATE TABLE IF NOT EXISTS Subscription source (
+CREATE TABLE IF NOT EXISTS Subscription_source (
     "Date" TIMESTAMP,
     "Subscription source" TEXT,
     "Subscribers" INTEGER,
@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS Subscription source (
 
 /*Subscription status*/
 
-CREATE TABLE IF NOT EXISTS Subscription status (
+CREATE TABLE IF NOT EXISTS Subscription_status (
     "Date" TIMESTAMP,
     "Subscription status" TEXT,
     "Views" INTEGER,
@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS Subscription status (
 
 /*Subtitles and CC*/
 
-CREATE TABLE IF NOT EXISTS Subtitles and CC (
+CREATE TABLE IF NOT EXISTS Subtitles_and_CC (
     "Date" TIMESTAMP,
     "Subtitles and CC" TEXT,
     "Views" INTEGER,
@@ -97,16 +97,16 @@ CREATE TABLE IF NOT EXISTS Subtitles and CC (
 
 /*Traffic sourse*/
 
-CREATE TABLE IF NOT EXISTS Traffic source (
+CREATE TABLE IF NOT EXISTS Traffic_source (
     "Date" TIMESTAMP,
-    "Traffic sourse" TEXT,
+    "Traffic source" TEXT,
     "Views" INTEGER,
-    PRIMARY KEY ("Date", "Traffic sourse")
+    PRIMARY KEY ("Date", "Traffic source")
 );
 
 /*Viewer age*/
 
-CREATE TABLE IF NOT EXISTS Viewer age (
+CREATE TABLE IF NOT EXISTS Viewer_age (
     "Viewer age" TEXT,
     "Views (%)" DOUBLE PRECISION,
     "Average view duration" TEXT,
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS Viewer_gender (
 
 /*Viwership by date*/
 
-CREATE TABLE IF NOT EXISTS Viwership by date (
+CREATE TABLE IF NOT EXISTS Viwership_by_date (
     "Date" TIMESTAMP,
     "Views" INTEGER,
     "Watch time (hours)" DOUBLE PRECISION,
